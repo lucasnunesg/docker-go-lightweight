@@ -4,7 +4,7 @@ WORKDIR /build
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=darwin go build -o ./fullcyclerocks
+RUN CGO_ENABLED=0 go build -o ./fullcyclerocks
 
 FROM scratch
 
